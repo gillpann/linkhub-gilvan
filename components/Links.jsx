@@ -2,7 +2,7 @@ import { Github, Briefcase, Linkedin } from "lucide-react";
 
 const Links = () => {
   return (
-    <section className="w-full max-w-md px-4 pb-16 relative z-10">
+    <section className="relative w-full max-w-md px-4 pb-16 z-10">
       <div className="flex flex-col space-y-4">
         <a
           href="https://ahmad-gilvan.vercel.app"
