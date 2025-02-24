@@ -1,4 +1,5 @@
-import { Github, Briefcase, Linkedin } from "lucide-react";
+import Image from "next/image";
+import { Github, Linkedin } from "lucide-react";
 
 const Links = () => {
   return (
@@ -8,13 +9,10 @@ const Links = () => {
           href="https://ahmad-gilvan.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-all duration-300 group"
+          className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-all duration-300 group border border-[var(--primary)]/20 hover:border-[var(--primary)]/40 shadow-[0_0_9px_var(--primary)] hover:shadow-[0_0_15px_var(--primary)]"
         >
-          <div
-            className="w-12 h-12 rounded-lg flex items-center justify-center mr-4"
-            style={{ backgroundColor: "var(--primary)" }}
-          >
-            <Briefcase className="w-6 h-6 text-background" />
+          <div className="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
+            <Image src="/logo.png" alt="logo" width={36} height={36} />
           </div>
           <div className="flex-grow">
             <h2 className="text-[var(--text-light)] font-semibold text-lg">
@@ -30,9 +28,9 @@ const Links = () => {
           href="https://github.com/gillpann"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-all duration-300 group"
+          className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-all duration-300 group border border-[var(--primary)]/20 hover:border-[var(--primary)]/40 shadow-[0_0_9px_var(--primary)] hover:shadow-[0_0_15px_var(--primary)]"
         >
-          <div className="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center mr-4">
+          <div className="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
             <Github className="w-6 h-6 text-[var(--text-light)]" />
           </div>
           <div className="flex-grow">
@@ -49,9 +47,9 @@ const Links = () => {
           href="https://linkedin.com/in/gilvan"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-all duration-300 group"
+          className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-all duration-300 group border border-[var(--primary)]/20 hover:border-[var(--primary)]/40 shadow-[0_0_9px_var(--primary)] hover:shadow-[0_0_15px_var(--primary)]"
         >
-          <div className="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mr-4">
+          <div className="w-12 h-12 rounded-lg flex items-center justify-center mr-4">
             <Linkedin className="w-6 h-6 text-[var(--text-light)]" />
           </div>
           <div className="flex-grow">
