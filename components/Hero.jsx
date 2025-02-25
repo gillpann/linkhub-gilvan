@@ -15,7 +15,7 @@ const Hero = () => {
 
       {/* Name with gradient */}
       <motion.h1
-        className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-3 sm:mb-4 text-center"
+        className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-3 sm:mb-4 text-center whitespace-nowrap"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}

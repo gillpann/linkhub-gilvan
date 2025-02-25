@@ -50,7 +50,7 @@ const links = [
     description: "View my repositories",
   },
   {
-    href: "https://linkedin.com/in/gilvan",
+    href: "https://linkedin.com/in/satriaahmadgilvanpundong",
     icon: <Linkedin className="w-6 h-6 text-[var(--text-light)]" />,
     title: "LinkedIn",
     description: "Connect with me",
