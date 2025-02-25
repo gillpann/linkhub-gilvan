@@ -1,5 +1,5 @@
-import BackgroundLight from "@/components/BackgroundLight";
-import AnimatedBackground from "@/components/AnimatedBackground";
+import BackgroundLight from "@/components/ui/BackgroundLight";
+import AnimatedBackground from "@/components/ui/AnimatedBackground";
 import Hero from "@/components/Hero";
 import Links from "@/components/Links";
 import Footer from "@/components/Footer";

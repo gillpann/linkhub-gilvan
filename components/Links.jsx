@@ -10,7 +10,7 @@ const linkVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: i * 0.3, // Jeda waktu lebih panjang antara link
+      delay: i * 0.3,
       duration: 0.5,
       ease: "easeOut",
     },
@@ -59,8 +59,8 @@ const links = [
 
 const Links = () => {
   return (
-    <section className="relative w-full max-w-md px-4 pb-16 z-10">
-      <div className="flex flex-col space-y-4">
+    <section className="relative w-full max-w-lg px-6 pb-16 z-10">
+      <div className="flex flex-col space-y-6">
         {links.map((link, i) => (
           <motion.a
             key={link.href}
@@ -68,7 +68,7 @@ const Links = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center p-4 bg-[var(--card-bg)] hover:bg-[var(--card-hover)] rounded-xl backdrop-blur-sm transition-colors duration-300 border border-[var(--primary)]/20 shadow-[0_0_9px_var(--primary)]"
-            custom={i} // Meneruskan index sebagai custom prop
+            custom={i}
             variants={linkVariants}
             initial="hidden"
             animate="visible"
@@ -76,7 +76,7 @@ const Links = () => {
             whileTap="tap"
           >
             <motion.div
-              className="w-12 h-12 rounded-lg flex items-center justify-center mr-4"
+              className="w-14 h-14 rounded-lg flex items-center justify-center mr-5"
               initial="initial"
               whileHover="hover"
               variants={iconVariants}
@@ -84,10 +84,10 @@ const Links = () => {
               {link.icon}
             </motion.div>
             <div className="flex-grow">
-              <h2 className="text-[var(--text-light)] font-semibold text-lg">
+              <h2 className="text-[var(--text-light)] font-semibold text-xl">
                 {link.title}
               </h2>
-              <p className="text-[var(--text-muted)] text-sm">
+              <p className="text-[var(--text-muted)] text-base">
                 {link.description}
               </p>
             </div>
