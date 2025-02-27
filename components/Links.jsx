@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Github, Linkedin } from "lucide-react";
+import { Github, Linkedin, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 
 const linkVariants = {
@@ -44,16 +44,28 @@ const links = [
     description: "Check out my work",
   },
   {
+    href: "https://ahmadgilvann.blogspot.com",
+    icon: <Image src="/blogger.svg" alt="blogger" width={36} height={36} />,
+    title: "Blog",
+    description: "Read my articles",
+  },
+  {
     href: "https://github.com/gillpann",
-    icon: <Github className="w-6 h-6 text-[var(--text-light)]" />,
+    icon: <Image src="/github.svg" alt="github" width={36} height={36} />,
     title: "GitHub",
     description: "View my repositories",
   },
   {
-    href: "https://linkedin.com/in/satriaahmadgilvanpundong",
-    icon: <Linkedin className="w-6 h-6 text-[var(--text-light)]" />,
+    href: "https://linkedin.com/in/satria-ahmad-gilvan-pundong",
+    icon: <Image src="/linkedin.svg" alt="logo" width={36} height={36} />,
     title: "LinkedIn",
     description: "Connect with me",
+  },
+  {
+    href: "mailto:gpundong@gmail.com",
+    icon: <Image src="/gmail.png" alt="email" width={36} height={36}/>,
+    title: "Email",
+    description: "Get in touch with me",
   },
 ];
 

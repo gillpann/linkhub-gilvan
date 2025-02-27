@@ -18,7 +18,8 @@ const ProfileImage = () => {
       whileHover={{ scale: 1.05 }}
     >
       <Image
-        alt=""
+        src="/gilvan.jpeg"
+        alt="profile"
         fill
         sizes="(max-width: 768px) 80px, 96px"
         className="object-cover"
